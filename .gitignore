@@ -1,0 +1,60 @@
+# ── Entornos y secretos ─────────────────────────────
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets/
+
+# ── Python ──────────────────────────────────────────
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+*.egg-info/
+
+# ── Node / frontend ─────────────────────────────────
+node_modules/
+frontend/dist/
+dist/
+*.tsbuildinfo
+.vite/
+
+# ── Imágenes subidas desde el panel (se generan en runtime) ──
+# Las imágenes de la demo se versionan en backend/app/seed/images
+# y el seed las copia a uploads/ al iniciar.
+backend/uploads/
+uploads/
+
+# ── Bases de datos y backups ────────────────────────
+*.sqlite
+*.sqlite3
+*.db
+*.dump
+*.backup
+*.bak
+*.sql.gz
+backups/
+
+# ── Logs y temporales ───────────────────────────────
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+*.tmp
+*.temp
+tmp/
+.cache/
+
+# ── Editor / SO ─────────────────────────────────────
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
